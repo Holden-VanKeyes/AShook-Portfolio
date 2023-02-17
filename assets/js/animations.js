@@ -1,10 +1,19 @@
 const logo = document.querySelector('#bulb')
 const bgColor = document.querySelector('div.logo')
+const resume = document.querySelector('.resume')
+const modal = document.querySelector('.modal')
+const closeButton = document.querySelector('.close-button')
+const bulb = document.querySelector('i.fa')
+const view = document.querySelector('.view')
 
 const white = 'rgb(255, 255, 255)'
 const yellow = 'rgb(247, 239, 153)'
-const bulb = document.querySelector('i.fa')
+
+view.addEventListener('click', enlargeResume)
 bulb.addEventListener('click', handleClick)
+closeButton.addEventListener('click', enlargeResume)
+resume.addEventListener('click', enlargeResume)
+resume.addEventListener('mouseover', changePointer)
 
 function colorChange() {
   logo.style.color = yellow
@@ -31,6 +40,14 @@ function handleClick() {
   } else bulb.className = 'fa fa-lightbulb fa-8x fa-spin'
 }
 
-// This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-// 									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-// 									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.
+function changePointer() {
+  resume.style.cursor = 'zoom-in'
+}
+
+function enlargeResume() {
+  let modalOpen = true
+  console.log('clicked')
+  modal.classList.toggle('show-modal')
+  window.scroll({ top: 0, left: 0 })
+  modal.className === 'modal' ? resume.scrollIntoView() : null
+}
