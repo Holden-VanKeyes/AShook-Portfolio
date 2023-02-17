@@ -8,6 +8,7 @@ const view = document.querySelector('.view')
 
 const white = 'rgb(255, 255, 255)'
 const yellow = 'rgb(247, 239, 153)'
+let modalOpen = true
 
 view.addEventListener('click', enlargeResume)
 bulb.addEventListener('click', handleClick)
@@ -45,9 +46,18 @@ function changePointer() {
 }
 
 function enlargeResume() {
-  let modalOpen = true
+  modalOpen = true
   console.log('clicked')
   modal.classList.toggle('show-modal')
   window.scroll({ top: 0, left: 0 })
   modal.className === 'modal' ? resume.scrollIntoView() : null
+
+  if (modalOpen === true) {
+    document.querySelector('body').addEventListener('click', closeModal)
+  }
+}
+
+function closeModal() {
+  modalOpen = false
+  modal.className = 'modal'
 }

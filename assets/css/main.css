@@ -126,13 +126,14 @@ em {
 }
 
 .close-button {
-    float: left;
+    /* float: left; */
+	position: absolute;
     width: 1.5rem;
     line-height: 1.5rem;
     text-align: center;
     cursor: pointer;
     border-radius: 0.25rem;
-    background-color: lightgray;
+    /* background-color: lightgray; */
 }
 
 .close-button:hover {
@@ -144,6 +145,15 @@ em {
 	visibility: visible;
 	transform: scale(1.0);
 	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.AClass{
+    right: 100px;
+    position: relative;
+}
+
+.container {
+	position: relative
 }
 
 
