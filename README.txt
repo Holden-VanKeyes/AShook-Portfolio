@@ -1,3 +1,11 @@
+
+I used this Dimension by HTML5 UP template as a great starting point 
+and then added my own styling, animations, and JavaScript logic!
+A great way to build a quick static site without getting bogged down 
+in CSS minutiae. 
+
+-------------------------
+
 Dimension by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
@@ -8,8 +16,7 @@ and a cool depth effect (click on a menu item to see what I mean). Simple, fully
 responsive, and kitted out with all the usual pre-styled elements you'd expect.
 Hope you dig it :)
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+
 
 (* = not included)
 
