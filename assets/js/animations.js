@@ -47,7 +47,7 @@ function changePointer() {
 
 function enlargeResume() {
   modalOpen = true
-  console.log('clicked')
+  // console.log('clicked')
   modal.classList.toggle('show-modal')
   window.scroll({ top: 0, left: 0 })
   modal.className === 'modal' ? resume.scrollIntoView() : null
