@@ -760,7 +760,43 @@ justify-content: center;
 		}
 
 /* Image */
+.album-div {
+	display: flex;
+	flex-direction: row;
+}
+.album {
+	padding: 0px 3px 0px 0px;
+	cursor: pointer;
+}
 
+.album-overlay{
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0px 3px 0px 0px;
+	background: rgba(29, 106, 154, 0.72);
+	color: #fff;
+	visibility: hidden;
+	opacity: 0;
+  
+	/* transition effect. not necessary */
+	transition: opacity .2s, visibility .2s;
+  }
+
+  /* .album:hover .album-text {
+	visibility: visible;
+	opacity: 1;
+	
+  } */
+  .album:hover .album-overlay {
+	visibility: visible;
+	opacity: 0.90;
+  }
 	.image {
 		border-radius: 4px;
 		border: 0;
@@ -1272,14 +1308,14 @@ justify-content: center;
 		}
 
 		#bg:before {
-			-moz-transition: background-color 2.5s ease-in-out;
-			-webkit-transition: background-color 2.5s ease-in-out;
-			-ms-transition: background-color 2.5s ease-in-out;
-			transition: background-color 2.5s ease-in-out;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
+			-moz-transition: background-color 1.5s ease-in-out;
+			-webkit-transition: background-color 1.5s ease-in-out;
+			-ms-transition: background-color 1.5s ease-in-out;
+			transition: background-color 1.5s ease-in-out;
+			-moz-transition-delay: 0.50s;
+			-webkit-transition-delay: 0.50s;
+			-ms-transition-delay: 0.50s;
+			transition-delay: 0.50s;
 			/* background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(58, 61, 68, 0.5)), url("../../images/overlay.png"); */
 			/* opacity: 20%; */
 			background-size: cover, 256px 256px;

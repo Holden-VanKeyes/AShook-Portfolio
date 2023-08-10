@@ -5,6 +5,7 @@ const modal = document.querySelector('.modal')
 const closeButton = document.querySelector('.close-button')
 const bulb = document.querySelector('i.fa')
 const view = document.querySelector('.view')
+// const album = document.querySelector('.album')
 
 const white = 'rgb(255, 255, 255)'
 const yellow = 'rgb(247, 239, 153)'
