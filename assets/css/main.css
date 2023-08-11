@@ -763,11 +763,16 @@ justify-content: center;
 .album-div {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
+	/* contain: content; */
 }
 .album {
 	padding: 0px 3px 0px 0px;
 	cursor: pointer;
+	
 }
+
+
 
 .album-overlay{
 	display: flex;
@@ -806,10 +811,9 @@ justify-content: center;
 
 		.image:before {
 			pointer-events: none;
-			background-image: url("../../images/overlay.png");
-			background-color: rgba(19, 21, 25, 0.5);
+			
 			border-radius: 4px;
-			content: '';
+			
 			display: block;
 			height: 100%;
 			left: 0;
