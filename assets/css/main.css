@@ -914,7 +914,7 @@ justify-content: center;
 	ul {
 		list-style: disc;
 		margin: 0 0 2rem 0;
-		padding-left: 1em;
+		/* padding-left: 1em; */
 	}
 
 		ul li {
@@ -950,6 +950,10 @@ justify-content: center;
 			margin-left: 2rem;
 		}
 
+
+		.comp {
+	margin-left: 20px;
+		}
 /* Actions */
 
 	ul.actions {
