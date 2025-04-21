@@ -2077,7 +2077,12 @@ body.is-preload #header .content .inner {
   .project-image {
     justify-self: center;
   }
+
+  #circle {
+    display: none;
+  }
 }
+
 /* Footer */
 
 #footer {
