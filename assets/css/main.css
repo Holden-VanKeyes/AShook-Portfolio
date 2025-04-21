@@ -2058,13 +2058,20 @@ body.is-preload #header .content .inner {
 }
 
 @media (max-width: 480px) {
+  .projects-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
   .project-card {
-    grid-template-areas:
+    /* grid-template-areas:
       'image'
       'title'
       'desc'
       'tech';
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; */
+    display: block;
+    border: none;
+    /* padding: 0; */
   }
 
   .project-image {
