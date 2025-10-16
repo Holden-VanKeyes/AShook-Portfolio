@@ -2034,6 +2034,13 @@ body.is-preload #header .content .inner {
   font-size: 0.875rem;
 }
 
+.custom-item {
+  background-color: rgba(255, 255, 255, 0.944);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.875rem;
+}
+
 .project-links {
   grid-area: links;
   display: flex;
